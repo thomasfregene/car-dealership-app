@@ -27,4 +27,19 @@ const createCars = (()=>{
     }
     
     //produce car function
+    function produceCars(){
+        makeCar('chevy', 'american')
+        makeCar('mercedes', 'german', 'img/car-german-1.jpeg', true)
+        makeCar('mercedes', 'german', 'img/car-german-2.jpeg', false)
+        makeCar('mercedes', 'german', 'img/car-german-3.jpeg', false, 'some model')
+        makeCar('mercedes', 'german', 'img/car-german-4.jpeg', undefined, 'other model')
+        makeCar('mercedes', 'german', 'img/car-german-5.jpeg', false)
+        makeCar('chevy','american','img/car-amercian-1.jpeg', false)
+        makeCar('chevy','american','img/car-amercian-2.jpeg', false)
+        makeCar('chevy','american','img/car-amercian-3.jpeg', false)
+        makeCar('chevy','american','img/car-amercian-4.jpeg', false)
+        makeCar('chevy','american','img/car-amercian-5.jpeg', false)
+    }
+    produceCars();
+    console.log(cars)
 })();
